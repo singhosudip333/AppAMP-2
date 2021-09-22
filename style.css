@@ -1,0 +1,329 @@
+/* Defualt CSS */
+
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+ol,
+ul,
+li,
+figcaption,
+textarea,
+input {
+    font-family: "Work Sans", sans-serif;
+}
+
+.item_link {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header CSS */
+
+.nav_img {
+    width: 50px;
+}
+
+/* Banner CSS */
+
+.banner {
+    background-image: url(image/mbr-10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 180px;
+    position: relative;
+    z-index: 4;
+}
+
+.banner::after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.section_text p {
+    font-size: 30px;
+    color: white;
+}
+
+.section_text h2 {
+    font-size: 45px;
+    color: white;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form_input input {
+    height: 60px;
+}
+
+.form_button button {
+    font-weight: 600;
+    height: 60px;
+    margin-left: -10px;
+}
+
+/* Counter Section */
+
+.counter_details {
+    color: #767676;
+}
+
+/* About Section */
+
+.about {
+    background: #f7f9ff;
+}
+
+.about_text {
+    margin-top: 135px;
+}
+
+.about_text p {
+    font-size: 18px;
+}
+
+/*  Feature Section */
+
+.feature_text {
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.feature_item {
+    height: 260px;
+}
+
+.feature_left_photo {
+    width: 45%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.feature_left_photo img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: -80px;
+}
+
+.feature_right_text {
+    width: 55%;
+    padding: 0px 15px;
+}
+
+.feature_right_text h2 {
+    font-size: 20px;
+}
+
+.feature_right_text p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.extra_img {
+    left: 0 !important;
+}
+
+/* Portfulio Section */
+
+.portfulio_h1 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.portfulio_item_img {
+    width: 350px;
+}
+
+.portfulio_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 120, 223, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.portfulio_all_items:hover .portfulio_item::after {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pricing Section */
+
+.pricing_section {
+    background-color: #f7f9ff;
+}
+
+.pricing_heading {
+    font-weight: 400;
+    font-size: 55px;
+}
+
+.pricing_text {
+    font-size: 25px;
+    word-spacing: -2px;
+    font-weight: 300;
+}
+
+.pricing_items {
+    background-color: white;
+    width: 400px;
+    height: 550px;
+    box-shadow: 3px 1px 15px #d9dce4;
+}
+
+.pricing_item_text {
+    height: 115px;
+}
+
+.pricing_items_p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.pricing_items_h1 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.pricing_list ul {
+    list-style: none;
+}
+
+.pricing_list ul li {
+    margin: 20px 0px;
+}
+
+.pricing_list ul li span i {
+    font-size: 25px;
+    color: #6278df;
+}
+
+.pricing_list ul li span {
+    padding-right: 6px;
+}
+
+.pricing_list ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300;
+    color: #767676;
+    cursor: default;
+}
+
+.pricing_items:hover .pricing-button a {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+/* Testimonial Section */
+
+.text_1 p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.text_2 h3 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.text_3 i {
+    font-size: 100px;
+    opacity: 0.2;
+}
+
+.text_4 p {
+    font-size: 23px;
+    padding: 20px 108px;
+    font-weight: 300;
+}
+
+.user_image img {
+    width: 55px;
+    border-radius: 50%;
+}
+
+.user_detail h4 {
+    font-size: 21px;
+}
+
+.user_detail p {
+    font-weight: 300;
+}
+
+/* Team Seaction */
+
+.team_section {
+    background-color: #f7f9ff;
+}
+
+.team_sub_title {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.member_image {
+    width: 100px;
+    margin-top: -46px;
+    position: relative;
+    right: -15px;
+}
+
+.member_name {
+    font-size: 23px;
+}
+
+.member_job {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.member_text {
+    font-weight: 300;
+}
+
+/* Footer  */
+
+.footer_section {
+    background-color: #f7f9ff;
+}
